@@ -256,69 +256,109 @@ class MyHomePage extends StatefulWidget {
 // }
 
 //listview
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    var arrNames = ['raunak', 'singh', 'harry', 'ethan'];
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     var arrNames = ['raunak', 'singh', 'harry', 'ethan'];
 
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter Container"),
-        ),
-        // body: ListView(
-        //   scrollDirection: Axis.horizontal,
-        //   reverse: true,
-        //   children: [
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: Text('one', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500, color: Color.fromARGB(255, 255, 149, 149)),),
-        //     ),
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: Text('two', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
-        //     ),
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: Text('three', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
-        //     ),
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: Text('four', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
-        //     ),
-        //     Padding(
-        //       padding: const EdgeInsets.all(8.0),
-        //       child: Text('five', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
-        //     ),
-        //   ]
-        // )
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text("Flutter Container"),
+//         ),
+// body: ListView(
+//   scrollDirection: Axis.horizontal,
+//   reverse: true,
+//   children: [
+//     Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Text('one', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500, color: Color.fromARGB(255, 255, 149, 149)),),
+//     ),
+//     Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Text('two', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
+//     ),
+//     Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Text('three', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
+//     ),
+//     Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Text('four', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
+//     ),
+//     Padding(
+//       padding: const EdgeInsets.all(8.0),
+//       child: Text('five', style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),),
+//     ),
+//   ]
+// )
 
-        // body: ListView.builder(
-        //   scrollDirection: Axis.horizontal,
-        //   itemBuilder: (context, index) {
-        //     return Text(
-        //       arrNames[index],
-        //       style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
-        //     );
-        //   },
-        //   itemCount: arrNames.length,
-        //   itemExtent: 100,
-        // )
+// body: ListView.builder(
+//   scrollDirection: Axis.horizontal,
+//   itemBuilder: (context, index) {
+//     return Text(
+//       arrNames[index],
+//       style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+//     );
+//   },
+//   itemCount: arrNames.length,
+//   itemExtent: 100,
+// )
 
-      body: ListView.separated(
-        itemBuilder: (context, index) {
-          return Text(
-            arrNames[index],
-            style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
-          );
-        },
-        separatorBuilder: (context, index) {
-          return Divider(
-            height: 100,
-            thickness: 2,
-          );
-        },
-        itemCount: arrNames.length,
-        )
-      );
-  }
-}
+//       body: ListView.separated(
+//         itemBuilder: (context, index) {
+//           return Text(
+//             arrNames[index],
+//             style: TextStyle(fontSize: 21, fontWeight: FontWeight.w500),
+//           );
+//         },
+//         separatorBuilder: (context, index) {
+//           return Divider(
+//             height: 100,
+//             thickness: 2,
+//           );
+//         },
+//         itemCount: arrNames.length,
+//         )
+//       );
+//   }
+// }
+
+//adding decoration to container
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text("Flutter Container"),
+//         ),
+//         body: Container(
+//             width: double.infinity,
+//             height: double.infinity,
+//             color: Colors.blue.shade50,
+//             child: Center(
+//               child: Container(
+//                   width: 200,
+//                   height: 200,
+//                   //color: Colors.blueGrey,
+//                   decoration: BoxDecoration(
+//                       color: Colors.blueGrey,
+//                       //borderRadius: BorderRadius.circular(20)
+//                       borderRadius: BorderRadius.only(
+//                           topLeft: Radius.circular(25),
+//                           bottomRight: Radius.circular(25)),
+//                       border: Border.all(
+//                         width: 2,
+//                         color: Colors.white,
+//                       ),
+//                       boxShadow: [
+//                         BoxShadow(
+//                           blurRadius: 11,
+//                           spreadRadius: 1,
+//                           color: Colors.black,
+//                         )
+//                       ],
+//                       //shape: BoxShape.circle
+//                       )),
+//             )));
+//   }
+// }
