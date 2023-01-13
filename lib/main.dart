@@ -400,3 +400,26 @@ class MyHomePage extends StatefulWidget {
 //       );
 //   }
 // }
+
+//margin and padding
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Flutter Container"),
+        ),
+        body: Container(
+          color: Colors.blue,
+          margin: EdgeInsets.only(top: 25, left: 25, right: 25, bottom: 55),
+          child: Padding(
+            padding: const EdgeInsets.all(11),
+            child: Text(
+              'hello devs',
+              style: TextStyle(fontSize: 25, color: Colors.white),
+              
+            ),
+          ),
+        ));
+  }
+}
