@@ -402,24 +402,52 @@ class MyHomePage extends StatefulWidget {
 // }
 
 //margin and padding
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter Container"),
-        ),
-        body: Container(
-          color: Colors.blue,
-          margin: EdgeInsets.only(top: 25, left: 25, right: 25, bottom: 55),
-          child: Padding(
-            padding: const EdgeInsets.all(11),
-            child: Text(
-              'hello devs',
-              style: TextStyle(fontSize: 25, color: Colors.white),
-              
-            ),
-          ),
-        ));
-  }
-}
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text("Flutter Container"),
+//         ),
+//         body: Container(
+//           color: Colors.blue,
+//           margin: EdgeInsets.only(top: 25, left: 25, right: 25, bottom: 55),
+//           child: Padding(
+//             padding: const EdgeInsets.all(11),
+//             child: Text(
+//               'hello devs',
+//               style: TextStyle(fontSize: 25, color: Colors.white),
+//             ),
+//           ),
+//         ));
+//   }
+// }
+
+// ListTile
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     var arrNames = ['raunak', 'singh', 'harry', 'ethan'];
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text("Flutter Container"),
+//         ),
+//         body: ListView.separated(itemBuilder: (context, index){
+//           return ListTile(
+//             leading: Text('${index + 1}'),
+//             title: Text(arrNames[index]),
+//             subtitle: Text('Number'),
+//             trailing: Icon(Icons.rice_bowl),
+//           );
+//         },
+//         itemCount: arrNames.length,
+//         separatorBuilder: (context, index) {
+//           return Divider(
+//             height: 20,
+//             thickness: 1,
+//           );
+//         },
+//       )
+//     );
+//   }
+// }
