@@ -250,7 +250,6 @@ class MyHomePage extends StatefulWidget {
 //           ),
 //         ),
 //       )
-
 //     );
 //   }
 // }
@@ -260,7 +259,6 @@ class MyHomePage extends StatefulWidget {
 //   @override
 //   Widget build(BuildContext context) {
 //     var arrNames = ['raunak', 'singh', 'harry', 'ethan'];
-
 //     return Scaffold(
 //         appBar: AppBar(
 //           title: Text("Flutter Container"),
@@ -291,7 +289,6 @@ class MyHomePage extends StatefulWidget {
 //     ),
 //   ]
 // )
-
 // body: ListView.builder(
 //   scrollDirection: Axis.horizontal,
 //   itemBuilder: (context, index) {
@@ -303,7 +300,6 @@ class MyHomePage extends StatefulWidget {
 //   itemCount: arrNames.length,
 //   itemExtent: 100,
 // )
-
 //       body: ListView.separated(
 //         itemBuilder: (context, index) {
 //           return Text(
@@ -360,5 +356,47 @@ class MyHomePage extends StatefulWidget {
 //                       //shape: BoxShape.circle
 //                       )),
 //             )));
+//   }
+// }
+
+//Expanded widget
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text("Flutter Container"),
+//         ),
+//         body: Column(
+//           children: [
+//             Container(
+//              // width: 50,
+//               height: 100,
+//               color: Colors.blue,
+//             ),
+//             Expanded(
+//               flex: 2,
+//               child: Container(
+//                 //width: 50,
+//                 height: 100,
+//                 color: Colors.red,
+//               ),
+//             ),
+//             Expanded(
+//               flex: 1,
+//               child: Container(
+//                 //width: 50,
+//                 height: 100,
+//                 color: Colors.pink,
+//               ),
+//             ),
+//             Container(
+//               //width: 50,
+//               height: 100,
+//               color: Colors.brown,
+//             ),
+//           ],
+//         )
+//       );
 //   }
 // }
