@@ -520,3 +520,76 @@ class MyHomePage extends StatefulWidget {
 //     );
 //   }
 // }
+
+//User input in TextField
+// class _MyHomePageState extends State<MyHomePage> {
+//   var emailText = TextEditingController();
+//   var passText = TextEditingController();
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Flutter Container'),
+//       ),
+//       body: Center(
+//         child: Container(
+//           width: 300,
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.center,
+//             children: [
+//               TextField(
+//                 keyboardType: TextInputType.phone,
+//                 controller: emailText,
+//                 enabled: true,
+//                 decoration: InputDecoration(
+//                     hintText: "enter email",
+//                     focusedBorder: OutlineInputBorder(
+//                       borderRadius: BorderRadius.circular(10),
+//                       borderSide: BorderSide(color: Colors.red, width: 5),
+//                     ),
+//                     enabledBorder: OutlineInputBorder(
+//                       borderRadius: BorderRadius.circular(10),
+//                       borderSide: BorderSide(color: Colors.blue, width: 5),
+//                     ),
+//                     disabledBorder: OutlineInputBorder(
+//                       borderRadius: BorderRadius.circular(10),
+//                       borderSide: BorderSide(color: Colors.grey, width: 5),
+//                     ),
+//                     suffixText: 'hello',
+//                     suffixIcon: IconButton(
+//                       icon: Icon(Icons.remove_red_eye, color: Colors.red),
+//                       onPressed: () {},
+//                     ),
+//                     prefixIcon: Icon(
+//                       Icons.email,
+//                       color: Colors.red,
+//                     )),
+//               ),
+//               Container(
+//                 height: 10,
+//               ),
+//               TextField(
+//                 obscureText: true,
+//                 //obscuringCharacter: '*',
+//                 controller: passText,
+//                 decoration: InputDecoration(
+//                   hintText: "enter password",
+//                   border: OutlineInputBorder(
+//                     borderRadius: BorderRadius.circular(10),
+//                   ),
+//                 ),
+//               ),
+//               ElevatedButton(
+//                   onPressed: () {
+//                     String uEmail = emailText.text.toString();
+//                     String uPass = passText.text;
+//                     print("email: $uEmail, pass: $uPass");
+//                   },
+//                   child: Text('Login'))
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
