@@ -622,3 +622,47 @@ class MyHomePage extends StatefulWidget {
 //         ));
 //   }
 // }
+
+// Day time picker
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text('Flutter Container'),
+//         ),
+//         body: Center(
+//           child: Column(
+//             mainAxisAlignment: MainAxisAlignment.center,
+//             children: [
+//               Text(
+//                 'select date',
+//                 style: TextStyle(fontSize: 25),
+//               ),
+//               // ElevatedButton(
+//               //     onPressed: () async {
+//               //       DateTime? datePicked = await showDatePicker(
+//               //           context: context,
+//               //           initialDate: DateTime.now(),
+//               //           firstDate: DateTime(2020),
+//               //           lastDate: DateTime(2021));
+//               //       if (datePicked != null) {
+//               //         print('date selected: ${datePicked.day}');
+//               //       }
+//               //     },
+//               //     child: Text('show'))
+//               ElevatedButton(onPressed: () async {
+//                 TimeOfDay? pickedTime = await showTimePicker(
+//                   context: context, 
+//                   initialTime: TimeOfDay.now(),
+//                   initialEntryMode: TimePickerEntryMode.dial,
+//                   );
+//                   if(pickedTime != null){
+//                     print('time selected: ${pickedTime.hour} - ${pickedTime.minute} - ${pickedTime.period}');
+//                   }
+//               }, child: Text("select"))
+//             ],
+//           ),
+//         ));
+//   }
+// }
