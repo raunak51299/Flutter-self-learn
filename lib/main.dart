@@ -451,3 +451,27 @@ class MyHomePage extends StatefulWidget {
 //     );
 //   }
 // }
+
+//CircleAvatar
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text("Flutter Container"),
+//         ),
+//         body: Center(
+//           child: Container(
+//             width: 200,
+//             height: 200,
+//             decoration: BoxDecoration(
+//               //boxShadow: [BoxShadow(blurRadius: 100, spreadRadius: 0.1, color: Colors.red)],
+//             ),
+//             child: CircleAvatar(
+//               backgroundImage: AssetImage('assets/images/1.png'),
+//               backgroundColor: Colors.transparent,
+//             ),
+//           ),
+//         ));
+//   }
+//}
