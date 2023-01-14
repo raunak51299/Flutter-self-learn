@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:learn_app/ui_helper/util.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -591,5 +592,33 @@ class MyHomePage extends StatefulWidget {
 //         ),
 //       ),
 //     );
+//   }
+// }
+
+//getting date and time
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     var time = DateTime.now();
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text('Flutter Container'),
+//         ),
+//         body: Center(
+//           child: Container(
+//             width: 200,
+//             height: 200,
+//             child: Column(
+//               children: [
+//                 Text('${DateFormat('jms').format(time)}'),
+//                 ElevatedButton(
+//                     onPressed: () {
+//                       setState(() {});
+//                     },
+//                     child: Text('Refresh'))
+//               ],
+//             ),
+//           ),
+//         ));
 //   }
 // }
