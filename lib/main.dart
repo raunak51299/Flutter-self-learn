@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:learn_app/ui_helper/util.dart';
 import 'package:intl/intl.dart';
@@ -780,3 +782,39 @@ class MyHomePage extends StatefulWidget {
 //         ));
 //   }
 // }
+
+//stack widget
+// class _MyHomePageState extends State<MyHomePage>{
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Flutter Container'),
+//       ),
+//       body: Stack(
+//         children: [
+//           Container(
+//             height: 200,
+//             width: 200,
+//             color: Colors.red,
+//           ),
+//           Positioned(
+//             left: 90,
+//             top: 20,
+
+//             child: Container(
+//               height: 150,
+//               width: 150,
+//               color: Colors.green,
+//             ),
+//           ),
+//           Container(
+//             height: 100,
+//             width: 100,
+//             color: Colors.blue,
+//           ),
+//         ]
+//       )
+//     );
+//   }
+// } 
