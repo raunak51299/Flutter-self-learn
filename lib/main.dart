@@ -5,6 +5,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:learn_app/ui_helper/util.dart';
 import 'package:intl/intl.dart';
+import 'package:learn_app/widgets/rounded_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -801,7 +802,6 @@ class MyHomePage extends StatefulWidget {
 //           Positioned(
 //             left: 90,
 //             top: 20,
-
 //             child: Container(
 //               height: 150,
 //               width: 150,
@@ -817,4 +817,26 @@ class MyHomePage extends StatefulWidget {
 //       )
 //     );
 //   }
-// } 
+// }
+
+//custom widget
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text('Flutter Container'),
+//         ),
+//         body: Container(
+//           width: 150, height: 80,
+//           child: RoundedButton(
+//             btnName: 'Play',
+//             icon: Icon(Icons.play_circle_filled_rounded, color: Colors.white),
+//             callBack: () {
+//               print('call back function');
+//             },
+//             textStyle: mTextStyle11(),
+//           ),
+//         ));
+//   }
+// }
