@@ -653,7 +653,7 @@ class MyHomePage extends StatefulWidget {
 //               //     child: Text('show'))
 //               ElevatedButton(onPressed: () async {
 //                 TimeOfDay? pickedTime = await showTimePicker(
-//                   context: context, 
+//                   context: context,
 //                   initialTime: TimeOfDay.now(),
 //                   initialEntryMode: TimePickerEntryMode.dial,
 //                   );
@@ -664,5 +664,101 @@ class MyHomePage extends StatefulWidget {
 //             ],
 //           ),
 //         ));
+//   }
+// }
+
+//grid view
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     var arrColors = [
+//       Colors.amber,
+//       Colors.blue,
+//       Colors.red,
+//       Colors.green,
+//       Colors.purple,
+//       Colors.yellow,
+//       Colors.orange,
+//       Colors.pink,
+//       Colors.teal
+//     ];
+//     return Scaffold(
+//         appBar: AppBar(
+//           title: Text('Flutter Container'),
+//         ),
+//         body:
+//             // GridView.count(
+//             // crossAxisCount: 3,
+//             // crossAxisSpacing: 5,
+//             // mainAxisSpacing: 5,
+//             // children: [
+//             //   Container(
+//             //     color: arrColors[0],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[1],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[2],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[3],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[4],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[5],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[6],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[7],
+//             //   ),
+//             //   Container(
+//             //     color: arrColors[8],
+//             //   ),
+//             // ],),
+//           // Container(
+//           //   //height: 100,
+//           //   child: GridView.extent(
+//           //   maxCrossAxisExtent: 150,
+//           //   children: [
+//           //     Container(
+//           //       color: arrColors[0],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[1],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[2],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[3],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[4],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[5],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[6],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[7],
+//           //     ),
+//           //     Container(
+//           //       color: arrColors[8],
+//           //     ),
+//           //   ],
+//           GridView.builder(itemBuilder: (context, index) {
+//             return Container(
+//               color: arrColors[index],
+//             );
+//           }, itemCount: arrColors.length, gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, crossAxisSpacing: 5, mainAxisSpacing: 5
+//         ),
+//           ));
 //   }
 // }
